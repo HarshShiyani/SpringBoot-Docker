@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: docker
+  jpa:
+    hibernate:
+      ddl-auto: create
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        default_schema: docker
+  datasource:
+    url: jdbc:postgresql://localhost:5432/docker
+    username: postgres
+    password: postgres
